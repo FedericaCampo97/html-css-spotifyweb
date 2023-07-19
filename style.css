@@ -53,23 +53,74 @@ main > div {
     display: flex;
     align-items: center;
 }
-.container{
-    width: 100%;
-    height: calc(100vh - 90px - 85px);
-}
-.genres {
-    width: 700px;
-    height: 40px;
-    background-color: white;
-    margin: 15px auto;
-}
 .button {
     background-color: white;
     width: 150px;
     height: 70px;
     position: absolute;
     right: 40px;
-    
+}
+.container{
+    width: 98%;
+    height: calc(97vh - 90px - 85px);
+    margin: 15px 15px;
+    overflow: auto;
+}
+.genres {
+    width: 700px;
+    height: 40px;
+    background-color: white;
+    margin: 8px auto;
+}
+.firstplaylist {
+    width: 100%;
+    height: 400px;
+}
+.recentlytitol {
+    width: 250px;
+    height: 45px;
+    background-color: white;
+    margin-top: 10px;
+}
+.blockrecentlyplayed{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+.blockrecentlyplayed > .col {
+    width: calc(100% / 6);
+    background-color: violet;
+    padding: 8px;
+}
+.blockrecentlyplayed > .col > .card {
+    width: 100%;
+    height: 230px;
+    background-color: pink;
+}
+.titolcreatedfor{
+    width: 300px;
+    height: 60px;
+    background-color: white;
+    margin-top: 35px;
+}
+.secondplaylist{
+    width: 100%;
+    height: 400px;
+}
+.blockcratedfor{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+.blockcratedfor > .col{
+    width: calc(100% / 6);
+    background-color: violet;
+    padding: 8px;
+}
+.blockcratedfor > .col > .card {
+    width: 100%;
+    height: 230px;
+    background-color: pink;
 }
 footer{
     width: 100%;
