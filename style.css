@@ -6,6 +6,7 @@
 main{
     width: 100%;
     height: calc(100vh - 95px);
+    
 }
 main > div {
     width: 100%;
@@ -16,6 +17,8 @@ main > div {
     height: calc(100vh - 95px);
     background-color: black;
     padding: 20px;
+    position: fixed;
+    z-index: 3;
 }
 .logo{
     width: 200px;
@@ -43,44 +46,47 @@ main > div {
 .display{
     width: calc(100% - 300px);
     height: calc(100vh - 95px);
-    background-color: #141922;
 }
 .upgrade{
     width: 100%;
     height: 85px;
-    background-color: #080b12;
-    position: relative;
+    background-color: #080b1233;
+    position: fixed;
     display: flex;
     align-items: center;
 }
-.button {
-    background-color: white;
-    width: 150px;
-    height: 70px;
+.upgrade > button {
+    background-color: #080b1233;
+    border: white 1px solid;
+    border-radius: 50px;
+    color: white;
+    padding: 10px 25px;
     position: absolute;
     right: 40px;
 }
 .container{
-    width: 98%;
-    height: calc(97vh - 95px - 85px);
-    margin: 15px 15px;
-    overflow: auto;
+    width: 100%;
+    overflow: initial;
+    padding: 95px 15px 95px 15px;
+    background-color: #141922;
+    margin-left: 300px;
 }
 .genres {
-    width: 700px;
-    height: 40px;
-    background-color: white;
-    margin: 8px auto;
+    text-align: center;
+    margin: auto;
+}
+.genres > a {
+    text-decoration: none;
+    color: white;
+    padding: 13px;
 }
 .firstplaylist {
     width: 100%;
-    height: 400px;
 }
 .recentlytitol {
-    width: 250px;
-    height: 45px;
-    background-color: white;
-    margin-top: 10px;
+    width: 30%;
+    color: white;
+    margin-top: 28px;
 }
 .blockrecentlyplayed{
     width: 100%;
@@ -89,18 +95,27 @@ main > div {
 }
 .blockrecentlyplayed > .col {
     width: calc(100% / 6);
-    background-color: violet;
     padding: 8px;
 }
 .blockrecentlyplayed > .col > .card {
     width: 100%;
-    height: 230px;
-    background-color: pink;
+    height: 100%;
+    text-align: center;
 }
-
+.cardimg > img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+.cardtitle > h3 {
+    color: white;
+    padding: 8px;
+}
+.cardtitle > p {
+    color: gray;
+}
 .secondplaylist{
     width: 100%;
-    height: 400px;
     margin-top: 25px;
 }
 .titolcreatedfor{
@@ -126,7 +141,6 @@ main > div {
 }
 .thirdplaylist{
     width: 100%;
-    height: 400px;
     margin-top: 25px;
 }
 .titolartist{
@@ -154,6 +168,7 @@ footer{
     width: 100%;
     height: 95px;
     background-color: #282828;
+    position: fixed;
 }
 .containerfooter{
     width: 100%;
@@ -177,4 +192,13 @@ footer{
     width: 270px;
     height: 80px;
     background-color: white;
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    .blockrecentlyplayed > .col {
+        width: calc(100% / 4);
+    }
+    .blockrecentlyplayed{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
