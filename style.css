@@ -85,10 +85,50 @@ main > div {
     color: #777777;
 }
 .profile{
-    width: 200px;
-    height: 70px;
-    background-color: rgba(255, 255, 255, 0.568);
-    margin-top: 220px;
+    width: 250px;
+    height: 80px;
+    margin-top: 200px;
+}
+.install {
+    width: 230px;
+    height: 40px;
+    margin: auto;
+    border-bottom: #777777 1px solid;
+    display: flex;
+    align-items: center;
+}
+.install > img {
+    width: 20px;
+    height: auto;
+    filter: opacity(0.8);
+}
+.install > span {
+    color: #777777;
+    padding: 0px 10px;
+}
+.profile2{
+    width: 230px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.profile2 > div {
+    width: 28px;
+    height: 28px;
+    background-color: #808080;
+    border-radius: 140px;
+    text-align: center;
+}
+.profile2 > div > img {
+    width: 69%;
+    height: auto;
+}
+.profile2 > h2 {
+    color: white;
+    font-size: 18px;
+    padding: 0px 12px;
 }
 .display{
     width: calc(100% - 300px);
