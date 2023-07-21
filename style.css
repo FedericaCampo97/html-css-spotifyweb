@@ -287,8 +287,22 @@ main > div {
     max-width: 200px;
     height: auto;
 }
+.cardimg {
+    position: relative;
+}
+.cardimg > i {
+    position: absolute;
+    top: 38%;
+    left: 39%;
+    font-size: 45px;
+    color: white;
+    display: none;
+}
+.cardimg:hover > i {
+    display: block;
+}
 .cardimg > img:hover {
-    filter: opacity(0.4);
+    filter: opacity(0.3);
 }
 .cardtitle > h3 {
     color: white;
@@ -356,6 +370,23 @@ main > div {
     border-radius: 200px;
     width: 100%;
     text-align: center;
+}
+.cardimground > img:hover {
+    filter: opacity(0.3);
+}
+.cardimground {
+    position: relative;
+}
+.cardimground > i {
+    position: absolute;
+    top: 38%;
+    left: 36%;
+    font-size: 45px;
+    color: white;
+    display: none;
+}
+.cardimground:hover > i {
+    display: block;
 }
 footer{
     width: 100%;
