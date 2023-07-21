@@ -9,7 +9,6 @@ body{
 main{
     width: 100%;
     height: calc(100vh - 95px);
-    
 }
 main > div {
     width: 100%;
@@ -22,6 +21,48 @@ main > div {
     padding: 20px;
     position: fixed;
     z-index: 3;
+}
+.menumobile {
+    background-color: black;
+    width: 50px;
+    height: calc(100vh - 95px);
+    padding: 5px;
+    display: none;
+    position: fixed;
+}
+.menumobile > .menuicons {
+    width: 40px;
+    height: 300px;
+    margin-top: 10px;
+}
+.menumobile > .menuicons > img {
+    width: 90%;
+    height: auto;
+    margin: 5px 0px;
+}
+.menuicons2 {
+    width: 40px;
+    height: 100px;
+    margin-top: 90px;
+    padding: 5px;
+    position: relative;
+    top: 340px;
+}
+.menuicons2 > div {
+    width: 26px;
+    height: 26px;
+    background-color: #808080;
+    border-radius: 50px;
+    text-align: center;
+}
+.menuicons2 > div > img {
+    width: 70%;
+    height: auto;
+}
+.menuicons2 > img {
+    width: 70%;
+    height: auto;
+    margin: 5px 0px;
 }
 .logo{
     width: 200px;   
@@ -46,9 +87,17 @@ main > div {
     height: 25px;
     filter: opacity(0.8);
 }
+.home > div > img:hover {
+    filter: none;
+    cursor: pointer;
+}
 .home > div > span {
     color: #777777;
     margin: 0px 10px;
+}
+.home > div > span:hover {
+    color: white;
+    cursor: pointer;
 }
 .playlist{
     width: 200px;
@@ -70,12 +119,20 @@ main > div {
     align-items: center;
     justify-content: center;
 }
+.createsplaylist > .squarecreatesplaylist:hover {
+    background-color: white;
+    cursor: pointer;
+}
 .squarecreatesplaylist > i {
     font-size: 20px;
 }
 .createsplaylist > div > span {
     padding: 0px 10px;
     color: #777777;
+}
+.createsplaylist > div > span:hover{
+    color: white;
+    cursor: pointer;
 }
 .nameplaylist {
     margin-top: 17px;
@@ -86,6 +143,10 @@ main > div {
     margin: 15px 0px;
     font-size: 17px;
     color: #777777;
+}
+.nameplaylist > ul > li:hover {
+    color: white;
+    cursor: pointer;
 }
 .profile{
     width: 250px;
@@ -105,9 +166,17 @@ main > div {
     height: auto;
     filter: opacity(0.8);
 }
+.install > img:hover{
+    filter: none;
+    cursor: pointer;
+}
 .install > span {
     color: #777777;
     padding: 0px 10px;
+}
+.install > span:hover{
+    color: white;
+    cursor: pointer;
 }
 .profile2{
     width: 230px;
@@ -133,6 +202,9 @@ main > div {
     font-size: 18px;
     padding: 0px 12px;
 }
+.profile2 > h2:hover {
+    cursor: pointer;
+}
 .display{
     width: calc(100% - 300px);
     height: calc(100vh - 95px);
@@ -153,6 +225,10 @@ main > div {
     padding: 10px 25px;
     position: absolute;
     right: 40px;
+    cursor: pointer;
+}
+.upgrade > button:hover {
+    padding: 20px 35px;
 }
 .container{
     width: 100%;
@@ -166,13 +242,24 @@ main > div {
     margin: auto;
 }
 .genres > ul > li {
-    display: inline;
+    display: inline-block;
     padding: 13px;
 }
 .genres > ul > li > a {
-    color: white;
+    color: #73767b;
     text-decoration: none;
-    line-height: 40px;
+    line-height: 35px;
+    position: relative;
+}
+.genres > ul > li > a > div{
+    display: block;
+    background: yellow;
+    width: 60%;
+    height: 2px;
+    margin: auto;
+}
+.genres > ul > li > a:hover {
+    color: white;
 }
 .firstplaylist {
     width: 100%;
@@ -199,6 +286,9 @@ main > div {
     width: 100%;
     max-width: 200px;
     height: auto;
+}
+.cardimg > img:hover {
+    filter: opacity(0.4);
 }
 .cardtitle > h3 {
     color: white;
@@ -282,12 +372,12 @@ footer{
     padding: 10px 20px;
 }
 .blockimg{
-    width: 360px;
+    width: 270px;
     height: 80px;
     display: flex;
 }
 .imgfooter{
-    width: 60px;
+    max-width: 60px;
     display: flex;
     align-items: center;
 }
@@ -296,7 +386,6 @@ footer{
     height: auto;
 }
 .namepiece {
-    height: 80px;
     width: 120px;
     margin: 0px 8px;
 }
@@ -305,6 +394,7 @@ footer{
     position: relative;
     bottom: -24px;
     color: white;
+    cursor: pointer;
 }
 .namepiece > p {
     position: relative;
@@ -312,17 +402,24 @@ footer{
     font-size: 12px;
     color: #7d7d7d;
 }
+.namepiece > p:hover {
+    color: white;
+    cursor: pointer;
+}
 .iconblockimg {
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 .iconblockimg > i {
-    color: #7d7d7d;;
-    padding: 0px 5px;
-
+    color: #7d7d7d;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.iconblockimg > i:hover {
+    color: white;
 }
 .production{
-    width: 600px;
+    width: calc(100% - 520px);
     height: 80px;
 }
 .mediaplay {
@@ -336,15 +433,23 @@ footer{
     padding: 0px 18px;
     font-size: 19px;
     color: white;
+    cursor: pointer;
+}
+.mediaplay > i:hover {
+    font-size: 23px;
 }
 #play {
     font-size: 35px;
 }
+#play:hover {
+    font-size: 42px;
+}
 .containerline{
-    width: 100%;
+    max-width: 570px;
     height: 40px;
     display: flex;
     justify-content: space-between;
+    margin: auto;
 }
 .startminutes {
     width: 50px;
@@ -355,20 +460,37 @@ footer{
     font-size: 12px;
 }
 .line {
-    width: 500px;
+    width: 470px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .fullline{
-    width: 470px;
-    height: 7px;
+    width: 100%;
+    height: 5px;
     background-color: #5a5a5a;
 }
 .fullline > div {
-    width: 90px;
+    width: 30%;
     height: 100%;
     background-color: #c1c1c1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.fullline > div > i {
+    position: relative;
+    left: 135px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+}
+.fullline > div:hover > i{
+    display: block;
+}
+.fullline > div:hover {
+    background-color: rgba(104, 173, 13, 0.719);
 }
 .andminutes {
     width: 50px;
@@ -379,7 +501,7 @@ footer{
     font-size: 12px;
 }
 .volume{
-    width: 270px;
+    width: 250px;
     height: 80px;
     display: flex;
     align-items: center;
@@ -387,11 +509,15 @@ footer{
 .volume > i {
     font-size: 13px;
     padding: 0px 11px;
-    color: #ececec;
+    color: #7d7d7d;
+    cursor: pointer;
+}
+.volume > i:hover {
+    color: white;
 }
 .volume > div {
     width: 130px;
-    height: 7px;
+    height: 5px;
     background-color: #5a5a5a;
     margin-left: 10px;
 }
@@ -399,6 +525,20 @@ footer{
     width: 40px;
     height: 100%;
     background-color: #c1c1c1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.volume > div > div > i {
+    position: relative;
+    left: 35px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+}
+.volume > div > div:hover > i{
+    display: block;
 }
 @media screen and (min-width: 750px) and (max-width: 1200px) {
     .blockrecentlyplayed > .col {
@@ -432,4 +572,47 @@ footer{
     .genres > a > span{
         padding-bottom: 20px;
     }
+    .iconblockimg {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .namepiece {
+        width: 80px;
+    }
+    .mediaplay > i {
+        padding: 0px 10px;
+        font-size: 15px;
+    }
+    .production {
+        width: calc(100% - 400px);
+    }
+    .line {
+        width: 90%;
+    }
+    #play {
+        font-size: 28px;
+    }
+    .volume > i {
+        font-size: 11px;
+        padding: 0px 8px;
+        color: #ececec;
+    }
+}
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none;
+        
+    }
+    .menumobile{
+        display: block;
+        z-index: 5;
+    }
+    .display{
+        width: calc(100% - 50px);
+        height: calc(100vh - 95px);
+    }
+    .container {
+        margin-left: 49px;
+    }
+    
 }
