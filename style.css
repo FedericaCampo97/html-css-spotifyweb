@@ -216,6 +216,7 @@ main > div {
     position: fixed;
     display: flex;
     align-items: center;
+    z-index: 2;
 }
 .upgrade > button {
     background-color: #080b1273;
@@ -289,6 +290,7 @@ main > div {
 }
 .cardimg {
     position: relative;
+    z-index: 1;
 }
 .cardimg > i {
     position: absolute;
@@ -297,6 +299,7 @@ main > div {
     font-size: 45px;
     color: white;
     display: none;
+    z-index: -1;
 }
 .cardimg:hover > i {
     display: block;
@@ -376,6 +379,7 @@ main > div {
 }
 .cardimground {
     position: relative;
+    z-index: 1;
 }
 .cardimground > i {
     position: absolute;
@@ -384,6 +388,7 @@ main > div {
     font-size: 45px;
     color: white;
     display: none;
+    z-index: -1;
 }
 .cardimground:hover > i {
     display: block;
@@ -393,6 +398,7 @@ footer{
     height: 95px;
     background-color: #282828;
     position: fixed;
+    z-index: 2
 }
 .containerfooter{
     width: 100%;
@@ -586,7 +592,7 @@ footer{
         width: calc(100% / 4);
     }
 }
-@media screen and (min-width: 480px) and (max-width: 749px) {
+@media screen  and (max-width: 749px) {
     .blockrecentlyplayed > .col {
         width: calc(100% / 2);
     }
